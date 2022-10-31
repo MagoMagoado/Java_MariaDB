@@ -7,8 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- * Class that create database connection and order the literary works from the data
- *
+ * Class that create database connection and order the literary works from the data.
  */
 public class ConnectionDAO {
 	private Connection connection = null;
@@ -16,12 +15,17 @@ public class ConnectionDAO {
 	private String user = "root";
 	private String password = "admin";
 	
+	/**
+	 * Class constructor.
+	 */
 	public ConnectionDAO(){
 		getConnection();
 		OrderLiteraryWorks();
-		
 	}
 	
+	/**
+	 * Class that makes connection with the database si400.
+	 */
 	private void getConnection() {
 		if(connection == null) {
 			try {
@@ -33,6 +37,9 @@ public class ConnectionDAO {
 		}
 	}
 	
+	/**
+	 * Class that order the literary work from the data to his original form. 
+	 */
 	private void OrderLiteraryWorks() {
 		String sql = "Select textline from Fragmentos where idGroup=2 order by line;";
 		try {
@@ -47,6 +54,4 @@ public class ConnectionDAO {
 			e.printStackTrace();
 		}
 	}
-	
-	
 }
