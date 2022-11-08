@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"mariadb","l":"aboutFrame"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"mariadb","l":"ConnectionDAO"},{"p":"mariadb","l":"helpFrame"},{"p":"mariadb","l":"loginGUI"},{"p":"mariadb","l":"mainMenu"},{"p":"mariadb","l":"Program"}];updateSearchResults();
